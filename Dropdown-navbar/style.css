@@ -1,0 +1,129 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,500;1,600;1,700&display=swap');
+
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;}
+
+.navbar{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #1B262C;}
+
+.navbar .content{
+    max-width: 1080px;
+    padding: 0 4px 0 3px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;}
+
+/* NAVBAR CONTENT */
+.navbar .heading{
+    color: #3282B8;
+    cursor: pointer;}
+
+/* -----List working----- */
+.list{
+    color: #3282B8;
+    display: flex;
+    align-items: center;
+}
+.list li{
+list-style: none;
+height: 100%;
+}
+.list .li{
+    margin: 2px 15px;
+    position: relative;
+}
+
+.list .submenu{
+    position: absolute;
+    top: 45px;
+    background-color: #1B262C;
+    border-radius: 4px 0 0 4px;
+    display: none;
+}
+.list li:hover .showMenu-html,
+.list li:hover .showMenu-js{    /*Can be write sunmenu in both of these place but want only relative*/
+    display: block;
+}
+.submenu li{
+    padding: 3px 12px;
+    padding-bottom: 6px ;
+    list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    width: 100%;
+}
+/* Changing the position of submenu */
+.submenu{
+    position: relative;
+}
+
+.submenu_two{
+    position: absolute;
+    top: 113px;
+    background-color: #1B262C;
+    left: 133px;
+    border-radius: 0 4px 4px 4px;
+    display: none;
+}
+.two_additional{  /*For the product sub menu*/
+    left:95px;
+}
+.submenu li:hover .showSubMenu{
+    display: block;
+}
+
+i{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.list li:hover .services-arrow,
+.list li:hover .product-arrow{
+    transform: rotate(180deg);
+}
+.disable a{
+    color: #819aa1;
+    cursor: none;
+}
+
+
+
+
+/* Button */
+.btn{
+    border: 2.5px solid #3282B8;
+    border-radius: 8px;
+    padding: 4px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BBE1FA;
+    cursor: pointer;
+}
+.btn:hover{
+    margin: 0 0 0 -3px;
+    box-shadow: 0 0 15px .2px #3282B8 ;
+    background-color: #BBE1FA;
+    border: 3.5px solid #BBE1FA;
+    color: #1B262C;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Global Classes */
+a {
+    text-decoration: none;
+    padding: 2px;
+    box-sizing: border-box;
+    color: #BBE1FA;
+}

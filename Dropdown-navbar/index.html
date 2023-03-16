@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ---CSS FILE LINK--- -->
+    <link rel="stylesheet" href="style.css">
+    <title>SubMenu navbar</title>
+</head>
+
+<body>
+    <!-- Navbar component-->
+    <nav class="navbar">
+        <div class="content">
+
+            <!-- Heading -->
+            <h1 class="heading">Navbar</h1>
+
+            <!-- ------Links or list having sub menu------ -->
+            <div>
+                <ul class="list">
+                    <li class="li"><a href="#">Home</a></li>
+                    <li 
+                    class="li"><a href="#">Services</a><i class='bx bx-chevron-down services-arrow'  ></i>
+                        <!-- sunMenu  -->
+                        <ul class="submenu showMenu-html">
+                            <li><a href="#">Web development</a></li>
+                            <li><a href="#" >UI UX designs</a></li>
+
+                            <li><a href="#" >Graphic designing</a>
+                                <!-- Sub-menu-2 -->
+                                <ul class="submenu_two showSubMenu">
+                                    <li><a href="#">Canva</a></li> 
+                                    <li><a href="#" >Adobe Illustrator</a></li>
+                                    <li><a href="#" >Figma</a></li>
+                                </ul> 
+                            
+                            </li>
+                        </ul> 
+                
+                    </li>
+                    <li class="li"><a href="#">Products</a><i class='bx bx-chevron-down product-arrow' ></i>
+                    <!-- sunMenu  -->
+                    <ul class="submenu showMenu-js">
+                        <li><a href="#">Daily go WebApp</a></li>
+                        <li><a href="#" >HooBank WebApp</a></li>
+
+                        <li><a href="#" class="more" >more</a>
+                            <!-- Sub-menu-2 -->
+                            <ul class="submenu_two two_additional showSubMenu ">
+                                <li><a href="#">E-commerce Store </a></li>
+                                <li><a href="#" >E-Learning App</a></li>
+                            </ul> 
+                        
+                        </li>
+                    </ul> 
+                    
+                    </li>
+                    <li class="li"><a href="#">About Us</a></li>
+                    <li class="disable li"><a href="#">Disable</a></li>
+                </ul>
+            </div>
+
+            <!-- Search button -->
+            <div class="btn">
+                <i class='bx bx-search-alt-2'></i>
+                search 
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- <script src="./script.js"></script>  -->
+</body>
+
+
+</html>
