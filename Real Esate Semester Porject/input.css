@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* This file will goes to output css */
+
+
+
+/* Global variable */
+*{
+    padding: 0; margin: 0; 
+    box-sizing: border-box;
+}
+html{scroll-behavior: smooth;}
+
+body{ font-family:'Poppins', sans-serif;}
+
+h1, h2, h3, h4{
+    font-weight: 600;
+}
+
+ul{list-style: none;}
+
+a{text-decoration: none;}
+
+.bottomBorder{
+    border: none none block none;
+}
+
+.icons{
+    width: 30px !important;
+    height: 30px !important;
+} 
+
+
+/* =====NAVBAR===== */
+
+.onhover_btn:hover
+{
+    border-radius: 14px 3px 3px 3px;
+    font-size: 17px;
+}
+
+/* ======HERO SECTION===== */
+
+#heroHeading{ font-size: 50px;}
+
+.img_properties{
+    border-radius: 100px 15px 15px 15px;
+    object-fit: fill;
+}
+
+/* =====left Floating Part===== */
+.rounded_border{
+    border-radius: 0 10px 10px 0;
+   
+}
+
+
+/* Anonomous BorderStyle */
+.borderStyle{
+    border: 2px solid black;
+    border-style: none none solid none;
+}
+
+
+/* Creating a Project section with parallex feature */
+ #imageProject{
+    background-image: url('/images/luxury-real-estate.jpg');
+    /* height: 400px; */
+    /* width: 100%; */
+    z-index: 100;
+    background-attachment: fixed;
+
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+} 
