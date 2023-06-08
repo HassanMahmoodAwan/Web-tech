@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEF !important;
+   
+}
+
+.swipeContainer{
+    max-width: 1120px;
+    width: 100%;
+    background-color: gray !important;
+    padding: 40px 0;
+}
+
+
+
+.Card{
+    background-color: #fff;
+    border-radius: 25px;
+    width: 320px !important;
+}
+
+.cardImage{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #fff;
+}
+.cardImage .cardImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid blue;
+}
