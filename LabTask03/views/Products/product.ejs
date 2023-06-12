@@ -1,0 +1,66 @@
+<a href="ProductAdd" class="float-right btn btn-success mb-5">Add Products</a>
+
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Company</th>
+      <th scope="col">Category</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Img</th>
+      <th scope="col">Actions</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <% for(let prod in product){ %>
+    <tr>
+      <th scope="row"><%= Number(prod)+1 %></th>
+      <td><%= product[prod].Name %></td>
+      <td><%= product[prod].Company %></td>
+      <td><%= product[prod].Category %></td>
+      <td><%= product[prod].Price %></td>
+      <td><%= product[prod].Quantity %></td>
+      <td><%= product[prod].Img %></td>
+      <td class="d-flex justify-content-between mx-2 ">
+        <a href="/delete/<%= product[prod]._id %>" class="btn btn-danger">Delete</a>
+        <a href="/edit/<%= product[prod]._id %>" class="btn btn-info">Edit</a>
+        <a href="/cart/<%= product[prod]._id %>" class="btn btn-warning">Add to Cart</a>
+      </td>
+    </tr>
+    <% } %>
+
+  </tbody>
+</table> 
+
+ <!-- Products -->
+
+
+<h1 class="my-5">Prodcuts</h1>
+
+
+<div class="container d-flex justify-content-center mb-5">
+<% for(let prod in product){ %>
+<div class="card mx-2 flex-wrap" style="width: 18rem;">
+  <img class="card-img-top" src="/images/p<%= Number(prod)+1 %>.png" alt="Card image cap">
+  <div class="card-body">
+    <h3 class="card-title"><%= product[prod].Name %></h3>
+
+    
+    <div class="d-flex justify-content-between mx-2">
+        <p><%= product[prod].Company %></p>
+        <p><%= product[prod].Category %></p>
+    </div>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+    <h5 class="mt-2 mb-3 mx-3 ">$ <%= product[prod].Price %></h5>
+
+    <a href="#" class="btn btn-primary">Add to Cart</a>
+  </div>
+</div>
+<% } %>
+</div> 
+
